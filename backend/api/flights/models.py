@@ -1,9 +1,9 @@
-from django.db import models
+from django.db import models 
 
 class Flight(models.Model):
     departure = models.CharField(max_length=100)
     departure_airport = models.CharField(max_length=100)
-    departure_airport_code = models.CharField(max_length=10)
+    departure_airport_code = models.CharField(max_length=10)            
     destination = models.CharField(max_length=100)
     destination_airport = models.CharField(max_length=100)
     destination_airport_code = models.CharField(max_length=10)
